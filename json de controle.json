@@ -1,0 +1,31 @@
+{
+    "TableName" : "***** TABLE NAME *****",
+    "FilterExpression" : "id = :v1",
+    "ExpressionAttributeValues" :  {
+        ":v1" : { "N" : "$input.params('id')" }
+    }
+}
+
+
+
+
+{
+    "TableName" : "***** TABLE NAME *****",
+    "ProjectionExpression" : "id, descricao, colecao",
+    "FilterExpression" : "assunto = :v1",
+    "ExpressionAttributeValues" :  {
+        ":v1" : { "S" : "$input.params('nome')" }
+    }
+}
+
+
+
+
+    {
+    "TableName" : "***** TABLE NAME *****",
+    "FilterExpression" : "assunto = :v1 AND colecao = :v2",
+    "ExpressionAttributeValues" :  {
+        ":v1" : { "S" : "$input.params('assunto')" },
+        ":v2" : { "S" : "$input.params('colecao')" }
+    }
+}
