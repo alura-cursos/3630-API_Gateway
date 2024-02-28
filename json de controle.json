@@ -21,7 +21,7 @@
 
 
 
-    {
+{
     "TableName" : "***** TABLE NAME *****",
     "FilterExpression" : "assunto = :v1 AND colecao = :v2",
     "ExpressionAttributeValues" :  {
